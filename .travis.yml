@@ -1,0 +1,49 @@
+language: python
+
+sudo: false
+cache:
+  apt: true
+  directories:
+    - $HOME/.cache/pip
+
+addons:
+  apt:
+    packages:
+      - expect-dev
+      - python-lxml
+      - python-simplejson
+      - python-yaml
+      - swig  # Required for m2crypto
+      - python-m2crypto
+      - xmlstarlet
+      - xsltproc
+      - xmlstarlet
+      - openssl
+      - poppler-utils
+      - antiword
+
+python:
+  - "2.7"
+env:
+  global:
+  - LINT_CHECK="0" TESTS="0"
+  - VERSION="10.0" ODOO_REPO="vauxoo/odoo"
+  - INCLUDE="asdcust"
+  matrix:
+  - LINT_CHECK="1"
+  - TESTS="1"
+
+virtualenv:
+  system_site_packages: true
+
+install:
+  - git clone --single-branch --depth=1 https://github.com/vauxoo-dev/maintainer-quality-tools.git -b master-vx-weblate-python3-jesuszapata ${HOME}/maintainer-quality-tools
+  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
+  - if [[ "${ENTERPRISE}" == "1" ]]; then git clone git@github.com:Vauxoo/enterprise.git -b $VERSION ${HOME}/enterprise; fi
+  - travis_install_nightly
+
+script:
+  - travis_run_tests
+
+after_success:
+  - travis_after_tests_success
