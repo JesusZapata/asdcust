@@ -27,7 +27,7 @@ python:
 env:
   global:
   - LINT_CHECK="0" TESTS="0"
-  - VERSION="8.0" ODOO_REPO="vauxoo-dev/odoo" ODOO_BRANCH="8.0-vx-generate-empty-content-po-file-jesuszapata"
+  - VERSION="8.0" ODOO_REPO="odoo/odoo"
   - INCLUDE="asdcust"
   matrix:
   - LINT_CHECK="1"
