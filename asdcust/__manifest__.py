@@ -4,7 +4,7 @@
 
 {
     "name": "Some random customer",
-    "version": "10.0.1.0.0",
+    "version": "10.0.1.0.1",
     "author": "Vauxoo",
     "category": "Installer",
     "website": "http://www.vauxoo.com",
