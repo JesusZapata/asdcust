@@ -10,7 +10,7 @@
     "website": "http://www.vauxoo.com",
     "license": "LGPL-3",
     "depends": [
-        "base",
+        "contacts",
     ],
     "demo": [],
     "data": [],
