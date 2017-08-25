@@ -27,7 +27,7 @@ python:
 env:
   global:
   - LINT_CHECK="0" TESTS="0"
-  - VERSION="sass-17" ODOO_REPO="vauxoo/odoo"
+  - VERSION="saas-17" ODOO_REPO="odoo/odoo"
   - INCLUDE="asdcust"
   matrix:
   - TESTS="1"
