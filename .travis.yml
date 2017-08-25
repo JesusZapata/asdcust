@@ -27,10 +27,9 @@ python:
 env:
   global:
   - LINT_CHECK="0" TESTS="0"
-  - VERSION="10.0" ODOO_REPO="vauxoo/odoo"
+  - VERSION="sass-17" ODOO_REPO="odoo/odoo"
   - INCLUDE="asdcust"
   matrix:
-  - LINT_CHECK="1"
   - TESTS="1"
 
 virtualenv:
