@@ -24,17 +24,21 @@ addons:
 
 python:
   - "2.7"
+
 env:
   global:
-  - LINT_CHECK="0" TESTS="0"
-  - VERSION="10.0" ODOO_REPO="vauxoo/odoo"
-  - INCLUDE="asdcust"
+  - GLOBAL="value"
   matrix:
-  - LINT_CHECK="1"
-  - TESTS="1"
+  - MATRIX="matrix"
 
-virtualenv:
-  system_site_packages: true
+matrix:
+  include:
+    - python: 2.7
+      env:
+        VARIABLE_INCLUDE_1="value"
+    - python: 2.7
+      env:
+        VARIABLE_INCLUDE_2="value"
 
 install:
   - git clone --single-branch --depth=1 https://github.com/vauxoo/maintainer-quality-tools.git -b master ${HOME}/maintainer-quality-tools
