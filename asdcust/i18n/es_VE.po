@@ -6,17 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-19 13:20+0000\n"
-"PO-Revision-Date: 2017-09-19 14:18+0000\n"
-"Last-Translator: Jesus Zapata <jesus@vauxoo.com>\n"
-"Language-Team: Spanish <https://translation.odoo-community.org/projects"
-"/github_com_vauxoo-dev_asdcust_10_0-dev/asdcust/es_VE/>\n"
-"Language: es_VE\n"
+"POT-Creation-Date: 2017-09-19 17:38+0000\n"
+"PO-Revision-Date: 2017-09-19 17:38+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14.1\n"
+"Plural-Forms: \n"
 
 #. module: asdcust
 #: model:ir.model,name:asdcust.model_res_partner
@@ -34,3 +31,4 @@ msgstr "NombrePrueba"
 #: model:ir.model.fields,field_description:asdcust.field_res_users_test_name
 msgid "Title"
 msgstr "Titulo"
+
