@@ -6,10 +6,10 @@ class Partner(models.Model):
 
     _inherit = 'res.partner'
 
-    test_name = fields.Char(string='Title', required=True)
+    test_name = fields.Char(string='Title')
 
     @api.multi
     def copy(self, default=None):
         default = dict(default or {})
 
-        default['test'] = _('Test')
+        default['test_name'] = _('TestName')
