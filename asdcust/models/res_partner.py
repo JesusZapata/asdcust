@@ -4,6 +4,8 @@ from odoo import models, fields, api
 
 class Partner(models.Model):
 
+    _inherit = 'res.partner'
+
     test_name = fields.Char(string='Title', required=True)
 
     @api.multi
