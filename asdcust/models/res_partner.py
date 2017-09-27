@@ -13,3 +13,4 @@ class Partner(models.Model):
         default = dict(default or {})
 
         default['test_name'] = _('TestName')
+        default['test_name'] = _('NewTranslatable')
