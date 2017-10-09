@@ -7,3 +7,4 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     test = fields.Char()
+    change = fields.Char()
