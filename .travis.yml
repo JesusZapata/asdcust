@@ -41,8 +41,9 @@ install:
 
 script:
   - travis_run_tests
-  - git clone https://github.com/JesusZapata/asdcust.git -b 11.0-oca
-  - pylint -r n -d all -e unnecessary-utf8-coding-comment,no-utf8-coding-comment --load-plugins=pylint_odoo /home/travis/asdcust
+  - ls
+  - pwd
+  - pylint -d all -e unnecessary-utf8-coding-comment,no-utf8-coding-comment --load-plugins=pylint_odoo /home/travis/build/JesusZapata/asdcust/asdcust
 
 after_success:
   - travis_after_tests_success
