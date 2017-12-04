@@ -34,7 +34,7 @@ env:
   - TESTS="1"
 
 install:
-  - git clone --single-branch --depth=1 https://github.com/OCA/maintainer-quality-tools.git -b master ${HOME}/maintainer-quality-tools
+  - git clone --single-branch --depth=1 https://github.com/vauxoo-dev/maintainer-quality-tools.git -b master-enable-unnecessary-utf8-coding-comment-jesuszapata ${HOME}/maintainer-quality-tools
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - if [[ "${ENTERPRISE}" == "1" ]]; then git clone git@github.com:Vauxoo/enterprise.git -b $VERSION ${HOME}/enterprise; fi
   - travis_install_nightly
