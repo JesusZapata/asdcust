@@ -13,7 +13,9 @@
         "base",
     ],
     "demo": [],
-    "data": [],
+    "data": [
+        'view/partner_view.xml',
+    ],
     "qweb": [],
     "installable": True,
     "application": True,
